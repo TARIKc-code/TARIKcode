@@ -1,0 +1,17 @@
+#include <stdio.h>
+int main () {
+int i;
+int sayi;
+int faktoriyel=1;
+printf("Faktoriyeli alinacak sayiyi giriniz= ");
+scanf("%d",&sayi);
+for (i=1;i<=sayi;i++)
+{
+   faktoriyel=faktoriyel*i;
+}
+   printf("Sonucunuz: %d",faktoriyel);
+
+return 0;
+}
+
+
