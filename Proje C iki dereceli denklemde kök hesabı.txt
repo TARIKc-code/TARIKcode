@@ -1,0 +1,41 @@
+#include <stdio.h>
+#include <stdlib.h>
+/*
+               TARIK CANBEK
+*/
+int main()
+{
+   int a;
+   int b;
+   int c;
+   float discriminant;
+   
+   // iki dereceli denklemde(ax2+bx+c) a,b ve c değerleri için giriş alınması
+   printf("a degerini giriniz:"); // iki dereceli denklemde(ax2+bx+c) a,b ve c değerleri için giriş alınması
+   scanf("%d", &a);
+   printf("b degerini giriniz:");
+   scanf("%d", &b);
+   printf("c degerini giriniz:");
+   scanf("%d", &c);
+   discriminant = (b * b) - (a * c * 4); // kök durumlarını anlamak için diskriminantının hesaplanması
+   printf("Discriminant: %.2f", discriminant);
+  
+   // discriminant değerlerine göre kök tanımlaması yapılması
+   if (discriminant > 0) 
+   {
+
+      printf("\ndenklemin gercek iki koku vardir ");
+   }
+   if (discriminant < 0)
+   {
+
+      printf("\ndenklemin reel koku yoktur");
+   }
+   if (discriminant = 0)
+   {
+
+      printf("\ndenklemin bir reel koku vardir");
+   }
+
+   return 0;
+}
